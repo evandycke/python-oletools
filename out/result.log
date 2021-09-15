@@ -1,0 +1,78 @@
+olevba 0.55.1 on Python 3.8.2 - http://decalage.info/python/oletools
+===============================================================================
+FILE: ../in\Sample1.xlsx
+Type: OpenXML
+No VBA macros found.
+
+===============================================================================
+FILE: ../in\Sample2.xls
+Type: OLE
+No VBA macros found.
+
+===============================================================================
+FILE: ../in\Sample3.xlt
+Type: OLE
+No VBA macros found.
+
+===============================================================================
+FILE: ../in\Sample4.xltm
+Type: OpenXML
+-------------------------------------------------------------------------------
+VBA MACRO ThisWorkbook.cls 
+in file: xl/vbaProject.bin - OLE stream: 'VBA/ThisWorkbook'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(empty macro)
+-------------------------------------------------------------------------------
+VBA MACRO Feuil1.cls 
+in file: xl/vbaProject.bin - OLE stream: 'VBA/Feuil1'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(empty macro)
+-------------------------------------------------------------------------------
+VBA MACRO Feuil2.cls 
+in file: xl/vbaProject.bin - OLE stream: 'VBA/Feuil2'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(empty macro)
+-------------------------------------------------------------------------------
+VBA MACRO Feuil3.cls 
+in file: xl/vbaProject.bin - OLE stream: 'VBA/Feuil3'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(empty macro)
+-------------------------------------------------------------------------------
+VBA MACRO Module1.bas 
+in file: xl/vbaProject.bin - OLE stream: 'VBA/Module1'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Sub Hello()
+    MsgBox "Hello from Sample4 !"
+End Sub
+
+===============================================================================
+FILE: ../in\Sample5.xlsm
+Type: OpenXML
+-------------------------------------------------------------------------------
+VBA MACRO ThisWorkbook.cls 
+in file: xl/vbaProject.bin - OLE stream: 'VBA/ThisWorkbook'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(empty macro)
+-------------------------------------------------------------------------------
+VBA MACRO Feuil1.cls 
+in file: xl/vbaProject.bin - OLE stream: 'VBA/Feuil1'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(empty macro)
+-------------------------------------------------------------------------------
+VBA MACRO Feuil2.cls 
+in file: xl/vbaProject.bin - OLE stream: 'VBA/Feuil2'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(empty macro)
+-------------------------------------------------------------------------------
+VBA MACRO Feuil3.cls 
+in file: xl/vbaProject.bin - OLE stream: 'VBA/Feuil3'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(empty macro)
+-------------------------------------------------------------------------------
+VBA MACRO Module1.bas 
+in file: xl/vbaProject.bin - OLE stream: 'VBA/Module1'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Sub Hello()
+    MsgBox "Hello from Sample5 !"
+End Sub
+
