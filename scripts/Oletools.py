@@ -39,22 +39,20 @@ class Oletools(metaclass=OletoolsMeta): # Définition de la classe Oletools
 	"""Classe définissant Oletools, qui permettra d'inspecter le code VBA présent dans des fichiers Excel"""
 
 	def __init__(self): # Constructeur
-		self.logger = None
-
-	def inspect(self):
-		"""Lance l'inspection du code VBA"""
-
 		# On configure le logger
 		LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
 		logging.basicConfig(level=logging.DEBUG, filemode='w', format=LOG_FORMAT)
 		formatter = logging.Formatter(LOG_FORMAT)
-		logger = logging.getLogger('oletools')
+		self.logger = logging.getLogger('oletools')
 
 		# Les logs seront inscrits dans un fichier
 		fileHandler = logging.FileHandler("../log/oletools.log", mode='w')
 		fileHandler.setFormatter(formatter)
-		logger.addHandler(fileHandler)
-		logger.info("Logger initialization complete ...")
+		self.logger.addHandler(fileHandler)
+		self.logger.info("Logger initialization complete ...")
+
+	def inspect(self):
+		"""Lance l'inspection du code VBA"""
 
 		# On récupère le contenu du fichier de configuration
 		# La configuration de l'analyse (quoi et où)
@@ -69,9 +67,9 @@ class Oletools(metaclass=OletoolsMeta): # Définition de la classe Oletools
 		# -d : activer le mode détaillé
 		# -r : activer la récursivité
 		# -c : afficher le code VBA sans l'analyser
-		logger.info("Scan in progress : %s%s ..." % (root,pattern))
+		self.logger.info("Scan in progress : %s%s ..." % (root,pattern))
 		os.system("olevba -a -d -r -c %s%s* > ../out/result.log" % (root,pattern))
-		logger.info("Scan finished !")
+		self.logger.info("Scan finished !")
 
 if __name__ == "__main__":
 	v = Oletools()
