@@ -27,6 +27,10 @@ Python Oletools.py
 The script will expose in the /out/result.log folder the VBA contents of each scanned file.
 Analysis logs are available in the /log/vba-inspect.log folder
 
+![Result](./images/result.png)
+
+![Oletools](./images/oletools.gif)
+
 ## Build with
 
 * [Python](https://www.python.org/) - Programming language
